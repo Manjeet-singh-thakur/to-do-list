@@ -30,11 +30,11 @@ function Todolist(props) {
       <h1>To Do List</h1>
       <input onChange={onchangeHandler} value={displayValue} className='enter' type='text' placeholder='Enter your work here'></input>
       <button onClick={onSubmitHandler} className='your'>Add</button>
-      <ul>
+      {/* <ul>
         {todoList.map((item) => (
           <li key={item}>{item}</li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   )
 }

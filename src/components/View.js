@@ -5,7 +5,7 @@ function View(props) {
   useEffect(() => {
     async function fetchdata() {
       try {
-        const responce = await fetch("https://jsonplaceholder.typicode.com/comments");
+        const responce = await fetch("https://jsonplaceholder.typicode.com/users");
         const data1 = await responce.json();
         console.log("data1 ==>", data1)
         props.setData(data1)

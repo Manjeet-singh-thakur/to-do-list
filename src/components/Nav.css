@@ -1,0 +1,16 @@
+nav.navigator {
+    display: flex;
+    align-items: center;
+    gap: 900px;
+    justify-content: center;
+    background: linear-gradient(45deg, #e50e0e, #4eebe4);
+    height: 100%;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    list-style: none;
+}
