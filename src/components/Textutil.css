@@ -10,10 +10,11 @@ textarea {
 button.btn {
     padding: 10px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     margin-left: 103px;
+    width: 105px;
 }
 .btnprimary {
     display: flex;
