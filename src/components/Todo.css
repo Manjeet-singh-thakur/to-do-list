@@ -1,0 +1,25 @@
+.demo {
+    background: linear-gradient(45deg, black, #0000004f);
+    height: 100vh;
+}
+input.enter {
+    margin-top: 50px;
+    padding: 12px;
+    width: 400px;
+    border-radius: 15px;
+    border: 0px;
+}
+button.your {
+    border-radius: 15px;
+    border: 0px;
+    margin-left: 10px;
+    width: 67px;
+    padding: 12px;
+}
+ul {
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
