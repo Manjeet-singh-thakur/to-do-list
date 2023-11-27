@@ -8,7 +8,7 @@ function Todolist(props) {
   const onchangeHandler = (e) => {
     console.log("event object", e.target.value);
     setdisplayvalue(e.target.value)
-    
+
   }
 
   const onSubmitHandler = () => {
@@ -21,7 +21,6 @@ function Todolist(props) {
       setdisplayvalue("");
       setTodolist([...todoList, displayValue]);
     }
-
   };
 
 

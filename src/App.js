@@ -18,9 +18,6 @@ function App() {
     <div className="App">
       <Todolist addData={addData} />
       <View data={data} setData={setData} />
-      
-      <Navbar/>
-      <Textutils/>
     </div>
   );
 }
