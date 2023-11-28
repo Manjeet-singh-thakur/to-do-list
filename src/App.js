@@ -1,24 +1,20 @@
 
-import React, { useEffect, useState } from 'react'
+import React, {} from 'react'
 import './App.css';
 import Todolist from './components/Todolist';
 import View from './components/View'
-import Textutils from './components/Textutils';
-import Navbar from './components/Navbar';
+import { GlobalContextProvider } from './store';
+import Memo from './components/Memo';
 
 function App() {
-  const [data, setData] = useState([]);
-
-
-  const addData = (item) => {
-    setData([...data, item])
-  }
-
   return (
-    <div className="App">
-      <Todolist addData={addData} />
-      <View data={data} setData={setData} />
-    </div>
+    <GlobalContextProvider>
+      <div className="App">
+        <Todolist />
+        <View />
+        <Memo/>
+      </div>
+    </GlobalContextProvider>
   );
 }
 

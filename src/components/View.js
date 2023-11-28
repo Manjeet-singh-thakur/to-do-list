@@ -1,26 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
+import { ContextStore } from '../store';
 
-function View(props) {
-    
+function View() {
+  const storeVal =  useContext(ContextStore);
+
   useEffect(() => {
     async function fetchdata() {
       try {
         const responce = await fetch("https://jsonplaceholder.typicode.com/users");
         const data1 = await responce.json();
-        console.log("data1 ==>", data1)
-        props.setData(data1)
+        storeVal.setData(data1)
       } catch (error) {
         console.log(error, "there is A ERROR")
       }
     }
     fetchdata();
+    // eslint-disable-next-line
   }, []);
 
+  console.log("data ==>",storeVal.data)
     return (
         <div>
-            {props.data.map((item) => {
+            {storeVal.data.map((item,i) => {
                 return (
-                    <div>
+                    <div key={i}>
                         <p style={{ fontSize: 20, color: "black" }}>{item.email}</p>
                     </div>
                 )
